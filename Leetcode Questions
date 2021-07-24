@@ -79,3 +79,25 @@ for s in string:
     if s not in vowels:
         res+=s    
 print(res)
+
+
+Leetcode 9. Palindrome Number
+
+Given an integer x, return true if x is palindrome integer.
+
+num=int(input("Enter a number"))
+rev=0
+temp=num
+
+if(num<0):
+    print("The number is not a palindrome number")
+else:
+    while(num>0):
+        dig=num%10
+        rev=rev*10+dig
+        num=num//10
+    if (temp==rev):
+        print("The Number is palindrome")
+    else:
+        print("The Number is not palindrome")
+        
