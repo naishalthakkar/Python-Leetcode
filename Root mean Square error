@@ -1,1 +1,8 @@
-
+import math
+y_actual = [3,4,5]
+y_predicted = [5,4,3]
+error=[]
+for i in range(len(y_actual)):
+    error.append((y_actual[i]-y_predicted[i]))
+    error_square = [i**2 for i in error]
+print((math.sqrt((sum(error_square)/len(y_actual)))))
