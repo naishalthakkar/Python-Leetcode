@@ -1,0 +1,13 @@
+input = [20,17,19,18,12,16,10,4,6,3]
+input.reverse()
+output = [20,19,18,16,10,6,3]
+
+array=[]
+
+for i in range(len(input)):
+    array.append(input[i])
+    if(len(array)>1):
+        if(input[i]<input[i-1]):
+            del array[-1]
+array.reverse()
+print(array)
