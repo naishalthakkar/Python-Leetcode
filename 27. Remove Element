@@ -9,6 +9,7 @@ for i in range(len(nums)):
     else:
         repeated.append(nums[i])
 print(len(nums_output))
+
 for i in range(len(repeated)):
     nums_output.append('_')
 print(nums_output)      
