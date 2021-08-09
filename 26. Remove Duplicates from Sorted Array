@@ -1,0 +1,12 @@
+nums=[0,0,1,1,1,2,2,3,3,4]
+# nums=[1,1,2]
+num_output=[]
+other=[]
+for i in range(len(nums)):
+    if nums[i] not in num_output:
+        num_output.append(nums[i])
+    else:
+        other.append(nums[i])
+for i in range(len(other)):
+    num_output.append('_')
+print(num_output)
