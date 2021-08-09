@@ -1,0 +1,13 @@
+val=2
+nums=[0,1,2,2,3,0,4,2]
+nums_output=[]
+repeated=[]
+
+for i in range(len(nums)):
+    if(val!=nums[i]):
+        nums_output.append(nums[i])
+    else:
+        repeated.append(nums[i])
+for i in range(len(repeated)):
+    nums_output.append('_')
+print(nums_output)   
